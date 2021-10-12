@@ -10,6 +10,9 @@ import User from '../models/User'
 
 const router = express.Router()
 
+// test route
+router.get('/test', (req, res) => res.send('Auth route'))
+
 // #desc: claim user data // #method: GET // #access: private
 router.get('/', authenticated, async (req, res) => {
   try {

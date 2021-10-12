@@ -11,7 +11,7 @@ import User from '../models/User'
 const router = express.Router()
 
 // test route
-router.get('/', (req, res) => res.send('User route'))
+router.get('/test', (req, res) => res.send('User route'))
 
 // #desc: sign up new user // #method: POST // #access: public
 router.post(

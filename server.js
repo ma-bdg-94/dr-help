@@ -6,6 +6,7 @@ const app = express()
 // import routes
 import usersRoute from './routes/users'
 import authRoute from './routes/auth'
+import profileRoute from './routes/profile'
 
 // connect to database
 connectDB()
@@ -16,6 +17,7 @@ app.use(express.json({ extended: false }))
 // define routes
 app.use('/api/users', usersRoute)
 app.use('/api/auth', authRoute)
+app.use('/api/profile', profileRoute)
 
 const PORT = process.env.PORT || 7000
 
