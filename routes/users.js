@@ -26,40 +26,7 @@ router.post(
     check('academicTitle')
       .not()
       .isEmpty()
-      .withMessage('Required Field! Must Include Your Academic Title')
-      .isIn([
-        'Professor',
-        'Principal Lecturer',
-        'Senior Lecturer',
-        'Clinical Lecturer',
-        'Lecturer',
-        'Assistant Lecturer',
-        'Professorial Research Fellow',
-        'Reader',
-        'Senior Research Fellow',
-        'Research Fellow',
-        'Research Assistant',
-        'Principal Technologist',
-        'Departmental Coordinator',
-        'Senior Chief Technologist',
-        'Lab Coordinator',
-        'Chief Technician',
-        'Senior Technician',
-        'Advanced Technician',
-        'Technician',
-        'Junior Technician',
-        'Trainee Technician',
-        'Senior Tutor',
-        'Professional Teaching Fellow',
-        'Senior Teaching Fellow',
-        'Teaching Fellow',
-        'Teaching Associate',
-        'PostDoc Fellow',
-        'Doctorate Student',
-        'Graduate Student',
-        'Undergraduate Student',
-      ])
-      .withMessage('Must Include A Valid Academic Title!'),
+      .withMessage('Required Field! Must Include Your Academic Title'),
     check(
       'institution',
       'Required Field! Must Include Your Current Institution',
